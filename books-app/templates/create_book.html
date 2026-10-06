@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+</head>
+<body>
+    <h2>წიგნი</h2>
+    <form method="POST">
+        <p>სათაური: <input type="text" name="title" value="{{ book.title if book }}"></p>
+        <p>ავტორი: <input type="text" name="author" value="{{ book.author if book }}"></p>
+        <p>წელი: <input type="number" name="year" value="{{ book.year if book }}"></p>
+        <button type="submit">შენახვა</button>
+    </form>
+</body>
+</html>
